@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="num1">
+<input type="number" id="num2">
+<button onclick="hamtong()">Cong</button>
+<button onclick="hamhieu()">tru</button>
+<h3>ket qua la:</h3>
+<p id="ketqua"></p>
+</body>
+<script>
+    function hamtong() {
+        let number1 = document.getElementById("num1").value;
+        let number2 = document.getElementById("num2").value;
+        let ketqua = Number(number1) + Number(number2);
+        document.getElementById("ketqua").innerHTML = ketqua;
+    }
+    function hamhieu() {
+        let number1 = document.getElementById("num1").value;
+        let number2 = document.getElementById("num2").value;
+        let ketqua = Number(number1) - Number(number2);
+        document.getElementById("ketqua").innerHTML = ketqua;
+    }
+</script>
+
+</html>
